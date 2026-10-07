@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Mbalenhle Dhlamini — Logistics Management, Supply Chain, Mining and Transport.">
+<title>Mbalenhle Dhlamini | Logistics • Supply Chain • Mining</title>
+<link rel="icon" href="images/favicon.jpg">
+<style>
+:root{--ink:#07111f;--ink2:#0d1c2e;--paper:#f4f0e8;--gold:#d8b36a;--gold2:#f0d69a;--rose:#d89aa6;--muted:#aab6c4;--line:#ffffff1c;--glass:#ffffff0a;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:#fff;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{text-decoration:none;color:inherit}
+nav{position:fixed;z-index:20;top:0;left:0;right:0;height:72px;background:#07111fcc;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:100%;max-width:var(--max);margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;font-size:.78rem;letter-spacing:.14em}.brand i{color:var(--gold);font-style:normal}
+.links{display:flex;gap:24px;text-transform:uppercase;letter-spacing:.12em;font-size:.67rem;color:#c7d0da}.links a:hover{color:var(--gold2)}
+.hero{min-height:100vh;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 82% 15%,#d8b36a20,transparent 28%),radial-gradient(circle at 5% 90%,#d89aa620,transparent 25%)}
+.hero-grid{max-width:var(--max);width:100%;padding:120px 24px 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center}.eyebrow,.kicker{color:var(--gold2);font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;font-weight:800}.eyebrow:before{content:"";display:inline-block;width:34px;height:1px;background:var(--gold);vertical-align:middle;margin-right:10px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500}h1{font-size:clamp(4rem,8vw,7.7rem);line-height:.88;letter-spacing:-.065em;margin:20px 0 28px}h1 em{color:var(--gold2);font-style:normal}h2{font-size:clamp(2.6rem,5vw,4.5rem);line-height:.98;letter-spacing:-.04em;margin:10px 0}.lead{max-width:650px;color:#bdc8d4;font-size:1.04rem;line-height:1.85}.lead strong{color:#fff}
+.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}.btn{padding:12px 17px;border:1px solid var(--line);border-radius:999px;text-transform:uppercase;letter-spacing:.11em;font-size:.68rem;font-weight:800;transition:.25s;display:inline-block}.btn:hover{transform:translateY(-2px);border-color:var(--gold)}.primary{background:var(--gold);color:#101722;border-color:var(--gold)}
+.portrait{position:relative;max-width:510px;margin:auto}.portrait:before{content:"";position:absolute;inset:-18px 32px 26px -18px;border:1px solid #d8b36a66;border-radius:28px;transform:rotate(-4deg)}.portrait img{width:100%;aspect-ratio:1/1.08;object-fit:cover;object-position:center 28%;display:block;border-radius:26px;position:relative;box-shadow:0 35px 90px #0008}.badge{position:absolute;z-index:2;left:-24px;bottom:28px;background:#07111fee;border:1px solid var(--line);padding:16px 18px;border-radius:17px;max-width:245px;box-shadow:0 25px 60px #0007}.badge small{display:block;color:var(--gold2);text-transform:uppercase;letter-spacing:.15em;font-size:.58rem}.badge b{font-size:.86rem}
+section .wrap{max-width:var(--max);margin:auto;padding:110px 24px}.dark{background:linear-gradient(#0b1a2c,#091727)}.intro{color:#9eabba;max-width:730px;margin-top:17px}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}.statement{font:2.35rem/1.25 Georgia,serif}.statement span{color:var(--gold2)}.copy{color:#aab5c3;margin-top:20px}.quote{border-left:2px solid var(--gold);padding-left:18px;margin-top:28px;color:#e4e8ed;font-style:italic}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}.stat{padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--glass)}.stat b{font:2rem Georgia,serif;color:var(--gold2);display:block}.stat small{font-size:.58rem;color:#8190a1;text-transform:uppercase;letter-spacing:.12em}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:40px}.card{min-height:165px;padding:24px 21px;border:1px solid var(--line);border-radius:21px;background:linear-gradient(145deg,#ffffff0d,#ffffff03);transition:.25s}.card:hover{transform:translateY(-5px);border-color:#d8b36a77}.icon{font-size:1.5rem;margin-bottom:25px}.card h3{font:500 1rem Inter,system-ui,sans-serif;margin:0 0 5px}.card p{font-size:.75rem;color:#8795a6;margin:0}
+.timeline{margin-top:45px;border-top:1px solid var(--line)}.item{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid var(--line)}.year{color:var(--gold2);font-size:.64rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800}.item h3{font:500 1.3rem Inter,system-ui,sans-serif;margin:0}.item p{color:#99a6b5;margin:7px 0 0;max-width:780px}
+.certs{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:40px}.cert{padding:27px;border:1px solid var(--line);border-radius:23px;background:linear-gradient(145deg,#d8b36a12,#ffffff04)}.tag{color:var(--gold2);font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.cert h3{font-size:1.55rem;margin:12px 0 7px}.cert p{color:#96a4b4;font-size:.8rem;margin:0}
+.vision{background:var(--paper);color:var(--ink)}.vision .kicker{color:#8d6a2b}.vision .intro{color:#586473}.vision-grid{display:grid;grid-template-columns:1fr 1fr;margin-top:42px;border-top:1px solid #d6d0c6;border-bottom:1px solid #d6d0c6}.vision-cell{padding:38px 26px}.vision-cell:first-child{border-right:1px solid #d6d0c6}.vision-cell h3{font-size:2rem;margin:0 0 8px}.vision-cell p{color:#5b6674}.opps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.opp{background:#fff;border:1px solid #d8d1c6;border-radius:17px;padding:20px}.opp b{display:block;font-size:.85rem}.opp span{font-size:.7rem;color:#6b7683}
+.contact{text-align:center;background:radial-gradient(circle at 80% 10%,#d8b36a1c,transparent 30%),#07111f}.contact p{max-width:650px;margin:18px auto;color:#9eabba}.contact .actions{justify-content:center}.note{font-size:.62rem;color:#687687;letter-spacing:.08em;margin-top:25px}
+footer{max-width:var(--max);margin:auto;padding:24px;color:#718092;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.portrait{margin-top:20px}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.links{display:none}.hero-grid{padding:105px 19px 60px}.hero{min-height:auto}section .wrap{padding:82px 19px}h1{font-size:clamp(3.7rem,17vw,6rem)}.cards,.certs,.opps,.vision-grid{grid-template-columns:1fr}.vision-cell:first-child{border-right:0;border-bottom:1px solid #d6d0c6}.item{grid-template-columns:1fr;gap:6px}footer{display:block}.portrait:before{inset:-9px 18px 18px -9px}.badge{left:8px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><a class="brand" href="#top">MBALENHLE <i>•</i> DHLAMINI</a><div class="links"><a href="#about">About</a><a href="#focus">Focus</a><a href="#journey">Journey</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></div></div></nav>
+
+<section class="hero" id="top"><div class="hero-grid">
+<div><div class="eyebrow">Logistics Management • Johannesburg</div><h1>Mbalenhle<br><em>Dhlamini.</em></h1>
+<p class="lead"><strong>Logistics Management student.</strong> Future supply-chain professional. Aspiring mining logistics and transport entrepreneur — building practical capability at the intersection of <strong>mining, procurement, transportation and operations.</strong></p>
+<div class="actions"><a class="btn primary" href="#contact">Let's Connect ↗</a><a class="btn" href="Mbalenhle_Dhlamini_CV.pdf">Download CV ↓</a><a class="btn" href="https://www.linkedin.com/in/mbalenhle-dhlamini-0186323b0" target="_blank">LinkedIn ↗</a></div></div>
+<div class="portrait"><img src="images/mbalenhle.jpg" alt="Mbalenhle Dhlamini"><div class="badge"><small>Career direction</small><b>Mining • Logistics • Supply Chain • Transport</b></div></div>
+</div></section>
+
+<section class="dark" id="about"><div class="wrap"><div class="about-grid">
+<div><div class="kicker">01 — The person behind the ambition</div><h2>Not just a CV.<br>A career in motion.</h2><div class="stats"><div class="stat"><b>UJ</b><small>University of Johannesburg</small></div><div class="stat"><b>02</b><small>Second-year journey</small></div><div class="stat"><b>02</b><small>Professional certificates</small></div><div class="stat"><b>∞</b><small>Room to grow</small></div></div></div>
+<div><p class="statement">“I want to understand how <span>things move</span> — from the source, through the supply chain, to the customer.”</p><p class="copy">Mbalenhle is a Logistics Management student developing a career around transportation, procurement, supply-chain operations and the mining value chain. Her goal is to turn academic knowledge into practical industry capability while building the foundation for a logistics and transport enterprise of her own.</p><p class="quote">“The opportunity I am looking for is not simply a job. It is a chance to learn, contribute, build relationships and prove what I can do.”</p></div>
+</div></div></section>
+
+<section id="focus"><div class="wrap"><div class="kicker">02 — Professional focus</div><h2>Where I want to<br>make an impact.</h2><p class="intro">A focused career direction built around the systems that keep businesses, mines and supply chains moving.</p>
+<div class="cards">
+<div class="card"><div class="icon">⛏</div><h3>Mining Logistics</h3><p>Commodity movement, mine-to-market logistics and operational coordination.</p></div>
+<div class="card"><div class="icon">⛓</div><h3>Supply Chain</h3><p>End-to-end flow of materials, information, suppliers and services.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Procurement</h3><p>Supplier relationships, sourcing, purchasing and commercial operations.</p></div>
+<div class="card"><div class="icon">🚛</div><h3>Transport</h3><p>Fleet, routing, freight coordination and efficient movement of goods.</p></div>
+<div class="card"><div class="icon">📦</div><h3>Inventory</h3><p>Stock control, warehousing, demand awareness and inventory technology.</p></div>
+<div class="card"><div class="icon">🏭</div><h3>Operations</h3><p>Learning how real-world logistics systems perform under pressure.</p></div>
+<div class="card"><div class="icon">🌍</div><h3>Commodity Logistics</h3><p>Understanding the commercial and operational journey of commodities.</p></div>
+<div class="card"><div class="icon">◆</div><h3>Entrepreneurship</h3><p>Long-term ambition to build a credible, compliant logistics business.</p></div>
+</div></div></section>
+
+<section class="dark" id="journey"><div class="wrap"><div class="kicker">03 — The journey</div><h2>Learning today.<br>Building tomorrow.</h2><p class="intro">A transparent record of development — focused on capability, exposure and continuous learning.</p>
+<div class="timeline">
+<div class="item"><div class="year">Education</div><div><h3>Logistics Management — University of Johannesburg</h3><p>Second-year student developing a foundation in logistics, transportation, supply chain and related business disciplines.</p></div></div>
+<div class="item"><div class="year">2026</div><div><h3>Industry networking & professional exposure</h3><p>Engaging with mining, energy, manufacturing, logistics and supply-chain organisations to understand industry pathways and identify practical opportunities.</p></div></div>
+<div class="item"><div class="year">Training</div><div><h3>Inventory Management + Digital Technology</h3><p>Completed professional development through HP LIFE and Absa Ready to Work, adding industry-relevant learning beyond the university curriculum.</p></div></div>
+<div class="item"><div class="year">Next</div><div><h3>Workplace exposure, mentorship & practical experience</h3><p>Seeking internships, vacation work, job shadowing, learnerships, mentorship and student-development opportunities.</p></div></div>
+</div></div></section>
+
+<section id="credentials"><div class="wrap"><div class="kicker">04 — Credentials</div><h2>Learning beyond<br>the classroom.</h2><p class="intro">Professional development that complements formal Logistics Management studies.</p>
+<div class="certs">
+<div class="cert"><div class="tag">HP LIFE • HP Foundation</div><h3>Inventory Management</h3><p>Certificate of Completion · 21 August 2026</p><p style="margin-top:12px">Training focused on inventory management and technology choices for effective inventory management.</p></div>
+<div class="cert"><div class="tag">Absa Ready to Work</div><h3>Introduction to Blockchain Technologies</h3><p>Certificate of Completion · 28 July 2026</p><p style="margin-top:12px">Additional digital and business-focused learning through Absa Group Corporate Affairs and University of Pretoria Enterprises.</p></div>
+</div></div></section>
+
+<section class="vision"><div class="wrap"><div class="kicker">05 — The bigger picture</div><h2>From student<br>to industry builder.</h2><p class="intro">The long-term objective is bigger than employment. It is capability, credibility and eventually ownership.</p>
+<div class="vision-grid"><div class="vision-cell"><h3>Career</h3><p>Build deep practical experience in mining logistics, supply chain, procurement, transportation and operations — learning from organisations that operate at scale.</p></div><div class="vision-cell"><h3>Enterprise</h3><p>Develop a compliant logistics and transport business capable of connecting commercial requirements with reliable transport capacity and professional service.</p></div></div>
+<div class="opps"><div class="opp"><b>Internships</b><span>Structured workplace learning</span></div><div class="opp"><b>Job Shadowing</b><span>See logistics in action</span></div><div class="opp"><b>Mentorship</b><span>Learn from industry professionals</span></div><div class="opp"><b>Vacation Work</b><span>Practical industry exposure</span></div><div class="opp"><b>Learnerships</b><span>Develop workplace capability</span></div><div class="opp"><b>Student Development</b><span>Build a long-term career pathway</span></div></div></div></section>
+
+<section class="contact" id="contact"><div class="wrap"><div class="kicker">06 — Open to opportunity</div><h2>Let's build the next chapter.</h2><p>Mbalenhle is open to conversations with organisations and professionals who can offer practical exposure, mentorship, student development, internships, vacation work or meaningful opportunities in logistics and supply chain.</p><div class="actions"><a class="btn primary" href="mailto:mbalenhlesamk.dhl@gmail.com">Email Mbalenhle ↗</a><a class="btn" href="https://www.linkedin.com/in/mbalenhle-dhlamini-0186323b0" target="_blank">LinkedIn ↗</a><a class="btn" href="Mbalenhle_Dhlamini_CV.pdf">Full CV ↓</a></div><div class="note">Replace ADD-EMAIL-HERE with her real email before publishing.</div></div></section>
+<footer><span>© 2026 Mbalenhle Dhlamini</span><span>Logistics • Supply Chain • Mining • Transport</span></footer>
+<script>const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("show")),{threshold:.12});document.querySelectorAll(".card,.cert,.item,.stat,.vision-cell,.opp,.statement,.copy,.quote,.kicker,h2,.intro,.portrait,.hero-grid>div").forEach(x=>{x.classList.add("reveal");o.observe(x)});</script>
+</body></html>
